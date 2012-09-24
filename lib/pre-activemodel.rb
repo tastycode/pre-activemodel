@@ -1,5 +1,8 @@
 $LOAD_PATH.unshift("#{File.dirname(__FILE__)}")
-require "pre-activemodel/activemodel/validator"
+require "pre"
+require "active_model"
+require "pre/activemodel/validator"
+require "pre_validator"
 module Pre
   module ActiveModel
   end

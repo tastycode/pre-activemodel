@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "pre-activemodel/version"
+require "pre/activemodel/version"
 
 Gem::Specification.new do |s|
   s.name        = "pre-activemodel"
@@ -20,4 +20,5 @@ Gem::Specification.new do |s|
 
   ["rspec", "mocha", "pry-nav"].each {|lib| s.add_development_dependency lib}
   s.add_runtime_dependency "pre"
+  s.add_runtime_dependency "activemodel"
 end
